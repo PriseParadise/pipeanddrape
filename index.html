@@ -6,18 +6,18 @@
 
   <!-- ═══ SEO ═══ -->
   <title>Alquiler Pipe & Drape Zaragoza | Fondos de Escenario y Separadores – Aragón</title>
-  <meta name="description" content="Alquiler de pipe & drape en Zaragoza y Aragón. Fondos de escenario, separadores de espacios y cortinaje profesional para eventos, bodas, congresos y ferias. Presupuesto rápido y sin compromiso. Llámanos: 606 392 650." />
+  <meta name="description" content="Alquiler de pipe & drape en Zaragoza y Aragón. Hasta 21 metros lineales disponibles. Fondos de escenario, separadores y cortinaje profesional para eventos, bodas, congresos y ferias. Presupuesto personalizado sin compromiso." />
   <meta name="keywords" content="alquiler pipe drape Zaragoza, pipe drape Aragón, fondo escenario alquiler Zaragoza, separadores ambiente eventos Zaragoza, pipe and drape boda Zaragoza, cortinaje eventos Aragón, alquiler decoración eventos Zaragoza" />
   <meta name="author" content="Pipe & Drape Zaragoza – Pluto" />
   <link rel="canonical" href="https://pipedrapezaragoza.es/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Alquiler Pipe & Drape Zaragoza | Fondos de Escenario – Aragón" />
-  <meta property="og:description" content="Fondos de escenario, separadores y cortinaje profesional para eventos en Aragón. Presupuesto gratis y rápido por WhatsApp." />
+  <meta property="og:description" content="Hasta 21 metros lineales disponibles. Fondos de escenario, separadores y cortinaje profesional para cualquier evento en Aragón. Presupuesto personalizado sin compromiso." />
   <meta property="og:url" content="https://pipedrapezaragoza.es/" />
   <meta property="og:locale" content="es_ES" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Alquiler Pipe & Drape Zaragoza" />
-  <meta name="twitter:description" content="Fondos de escenario y separadores profesionales para eventos en Aragón. Solicita presupuesto por WhatsApp: 606 392 650." />
+  <meta name="twitter:description" content="Hasta 21 metros lineales de Pipe & Drape para eventos en Aragón. Presupuesto personalizado: 606 392 650." />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -25,12 +25,11 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Pipe & Drape Zaragoza",
-    "description": "Alquiler de pipe & drape para fondos de escenario, separadores y cortinaje profesional en eventos. Servicio en Zaragoza, Aragón y alrededores.",
+    "description": "Alquiler de pipe & drape para fondos de escenario, separadores y cortinaje profesional en eventos. Hasta 21 metros lineales disponibles. Servicio en Zaragoza, Aragón y alrededores.",
     "telephone": "+34606392650",
     "email": "plutocapili@gmail.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Zaragoza", "addressRegion": "Aragón", "addressCountry": "ES" },
     "areaServed": ["Zaragoza","Aragón","Huesca","Teruel","La Rioja","Navarra","Lleida"],
-    "priceRange": "$$",
     "openingHours": "Mo-Sa 09:00-20:00"
   }
   </script>
@@ -41,7 +40,7 @@
     "name": "Alquiler de Pipe & Drape en Zaragoza",
     "provider": { "@type": "LocalBusiness", "name": "Pipe & Drape Zaragoza" },
     "areaServed": "Aragón",
-    "description": "Alquiler de sistemas pipe & drape para fondos de escenario, separadores de ambiente y cortinaje para eventos en Zaragoza y Aragón.",
+    "description": "Alquiler de sistemas pipe & drape para fondos de escenario, separadores de ambiente y cortinaje para eventos en Zaragoza y Aragón. Hasta 21 metros lineales disponibles.",
     "serviceType": "Alquiler de equipamiento para eventos"
   }
   </script>
@@ -60,6 +59,8 @@
       --gray:   #888;
       --wa:     #25D366;
       --wa-d:   #1da851;
+      --blue:   #4A90D9;
+      --blue-d: #357ABD;
       --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
       --radius: 10px;
     }
@@ -82,11 +83,13 @@
     .btn-wa  { background: var(--wa); color: #fff; }
     .btn-wa:hover { background: var(--wa-d); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(37,211,102,.3); }
     .btn-call { background: transparent; border: 2px solid rgba(255,255,255,.2); color: #ccc; }
-    .btn-call:hover { border-color: rgba(255,255,255,.45); color: #fff; }
+    .btn-call:hover { border-color: rgba(255,255,255,.45); color: #fff; transform: translateY(-2px); }
     .btn-gold { background: var(--gold); color: var(--black); }
-    .btn-gold:hover { background: var(--gold-l); }
+    .btn-gold:hover { background: var(--gold-l); transform: translateY(-2px); }
     .btn-outline { background: transparent; border: 2px solid var(--gold); color: var(--gold); }
     .btn-outline:hover { background: var(--gold); color: var(--black); }
+    .btn-email { background: transparent; border: 2px solid rgba(255,255,255,.2); color: #ccc; }
+    .btn-email:hover { border-color: var(--gold-l); color: var(--gold-l); transform: translateY(-2px); }
     .btn-sm { padding: 11px 22px; font-size: .88rem; }
 
     /* ── Nav ── */
@@ -101,18 +104,19 @@
     nav.scrolled { border-bottom-color: rgba(201,168,76,.28); }
     .nav-logo { font-size: 1.1rem; font-weight: 800; letter-spacing: .03em; }
     .nav-logo em { color: var(--gold); font-style: normal; }
-    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a { font-size: .87rem; color: #aaa; transition: color .2s; }
     .nav-links a:hover { color: var(--gold); }
-    .nav-wa {
+    .nav-contact {
       display: flex; align-items: center; gap: 7px;
-      background: var(--wa); color: #fff;
+      background: var(--gold); color: var(--black);
       padding: 9px 18px; border-radius: 5px;
       font-size: .85rem; font-weight: 700;
       transition: background .2s;
     }
-    .nav-wa:hover { background: var(--wa-d); }
-    @media (max-width: 768px) { .nav-links { display: none; } }
+    .nav-contact:hover { background: var(--gold-l); }
+    @media (max-width: 900px) { .nav-links .nav-hide { display: none; } }
+    @media (max-width: 640px) { .nav-links { display: none; } }
 
     /* ── Hero ── */
     #inicio {
@@ -130,41 +134,54 @@
         repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(201,168,76,.03) 60px),
         repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(201,168,76,.03) 60px);
     }
-    .hero-content { position: relative; z-index: 1; max-width: 700px; }
-    .hero-badge {
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+    .hero-location-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(37,211,102,.1); border: 1px solid rgba(37,211,102,.25);
+      background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.25);
       border-radius: 100px; padding: 6px 16px;
-      font-size: .78rem; color: var(--wa); letter-spacing: .08em; text-transform: uppercase;
+      font-size: .78rem; color: var(--gold); letter-spacing: .08em; text-transform: uppercase;
       margin-bottom: 24px;
     }
-    .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--wa); }
+    .hero-location-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
     h1.hero-title {
       font-size: clamp(2.2rem, 5.5vw, 3.8rem);
       font-weight: 800; line-height: 1.1; margin-bottom: 20px;
     }
     .hero-sub {
       font-size: clamp(1rem, 2vw, 1.15rem);
-      color: #aaa; margin-bottom: 36px; max-width: 580px; line-height: 1.7;
+      color: #aaa; margin-bottom: 24px; max-width: 580px; line-height: 1.7;
     }
-    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+    /* Availability strip */
+    .hero-avail {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 10px 0;
+      background: rgba(201,168,76,.07); border: 1px solid rgba(201,168,76,.2);
+      border-radius: 8px; padding: 12px 18px; margin-bottom: 32px;
+      font-size: .87rem; color: #ccc;
+    }
+    .hero-avail-item { display: flex; align-items: center; gap: 7px; padding: 0 16px 0 0; }
+    .hero-avail-item:not(:last-child) { border-right: 1px solid rgba(255,255,255,.1); margin-right: 16px; }
+    .hero-avail-item strong { color: var(--gold-l); }
+    @media (max-width: 560px) {
+      .hero-avail { flex-direction: column; align-items: flex-start; }
+      .hero-avail-item:not(:last-child) { border-right: none; padding-right: 0; margin-right: 0; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,.07); margin-bottom: 8px; }
+    }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
     /* Hero metrics */
     .hero-metrics {
       display: flex; gap: 0; flex-wrap: wrap;
       border: 1px solid var(--border); border-radius: var(--radius);
-      overflow: hidden; max-width: 540px;
+      overflow: hidden; max-width: 560px;
     }
     .metric {
       flex: 1; min-width: 150px;
-      padding: 16px 20px;
-      border-right: 1px solid var(--border);
+      padding: 16px 20px; border-right: 1px solid var(--border);
       display: flex; align-items: center; gap: 12px;
     }
     .metric:last-child { border-right: none; }
     .metric-icon { font-size: 1.3rem; }
     .metric-text strong { display: block; font-size: .85rem; color: var(--white); font-weight: 600; }
     .metric-text small { font-size: .72rem; color: #666; }
-    @media (max-width: 540px) {
+    @media (max-width: 560px) {
       .hero-metrics { flex-direction: column; }
       .metric { border-right: none; border-bottom: 1px solid var(--border); min-width: unset; }
       .metric:last-child { border-bottom: none; }
@@ -173,25 +190,27 @@
     /* ── Trust bar ── */
     #trust-bar {
       background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-      padding: 20px 0;
+      padding: 18px 0;
     }
     .trust-bar-inner {
       display: flex; align-items: center; justify-content: center;
-      gap: 40px; flex-wrap: wrap;
+      gap: 32px; flex-wrap: wrap;
     }
-    .trust-item { display: flex; align-items: center; gap: 9px; font-size: .85rem; color: #bbb; }
-    .trust-item span { font-size: 1.1rem; }
-    @media (max-width: 540px) { .trust-item small { display: none; } }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: .84rem; color: #bbb; }
+    .trust-check { color: var(--gold); font-weight: 700; font-size: .9rem; }
+    @media (max-width: 600px) {
+      .trust-bar-inner { gap: 16px 24px; justify-content: flex-start; padding: 0 4vw; }
+      .trust-item { font-size: .8rem; }
+    }
 
     /* ── Cómo funciona ── */
     #como { background: var(--dark); }
     .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
     .steps::before {
       content: ''; position: absolute; top: 28px; left: 12.5%; right: 12.5%; height: 2px;
-      background: linear-gradient(90deg, var(--gold), rgba(201,168,76,.2));
-      z-index: 0;
+      background: linear-gradient(90deg, var(--gold), rgba(201,168,76,.2)); z-index: 0;
     }
-    .step { padding: 0 20px 0; text-align: center; position: relative; z-index: 1; }
+    .step { padding: 0 20px; text-align: center; position: relative; z-index: 1; }
     .step-num {
       width: 56px; height: 56px; border-radius: 50%;
       background: var(--gold); color: var(--black);
@@ -219,34 +238,40 @@
     .porq-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: 8px; }
     .porq-card p { font-size: .83rem; color: #777; line-height: 1.55; }
 
-    /* ── Precios ── */
-    #precios { background: var(--dark); }
-    .precios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .precio-card {
+    /* ── Material disponible ── */
+    #material { background: var(--dark); }
+    .material-highlight {
+      display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+      background: linear-gradient(135deg, rgba(201,168,76,.08) 0%, rgba(201,168,76,.03) 100%);
+      border: 1px solid rgba(201,168,76,.25); border-radius: var(--radius);
+      padding: 28px 32px; margin-bottom: 44px;
+    }
+    .material-num-wrap { text-align: center; min-width: 100px; }
+    .material-num { display: block; font-size: 3.2rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .material-num-label { font-size: .75rem; color: #888; letter-spacing: .1em; text-transform: uppercase; margin-top: 4px; }
+    .material-divider { width: 1px; height: 60px; background: rgba(201,168,76,.2); }
+    .material-desc { font-size: 1rem; color: #ccc; line-height: 1.7; flex: 1; }
+    .material-desc strong { color: var(--gold-l); }
+    @media (max-width: 520px) { .material-divider { display: none; } .material-num-wrap { text-align: left; } }
+
+    .material-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .material-item {
+      display: flex; gap: 16px; align-items: flex-start;
       background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 32px 28px; position: relative; overflow: hidden;
-      transition: border-color .2s, transform .2s;
+      padding: 20px 18px; transition: border-color .2s;
     }
-    .precio-card:hover { border-color: rgba(201,168,76,.4); transform: translateY(-4px); }
-    .precio-card.featured {
-      border-color: rgba(201,168,76,.4);
-      background: linear-gradient(160deg, #1a1208 0%, #111 100%);
+    .material-item:hover { border-color: rgba(201,168,76,.3); }
+    .material-item-icon {
+      width: 42px; height: 42px; min-width: 42px; border-radius: 8px;
+      background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.18);
+      display: flex; align-items: center; justify-content: center; font-size: 1.15rem;
     }
-    .precio-badge {
-      position: absolute; top: 16px; right: 16px;
-      background: var(--gold); color: var(--black);
-      font-size: .65rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
-      padding: 4px 10px; border-radius: 3px;
-    }
-    .precio-icon { font-size: 2rem; margin-bottom: 16px; }
-    .precio-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
-    .precio-range { font-size: 1.6rem; font-weight: 800; color: var(--gold); margin-bottom: 6px; }
-    .precio-range small { font-size: .75rem; color: #777; font-weight: 400; }
-    .precio-desc { font-size: .85rem; color: #888; margin-bottom: 20px; line-height: 1.6; }
-    .precio-includes { list-style: none; margin-bottom: 24px; display: flex; flex-direction: column; gap: 8px; }
-    .precio-includes li { font-size: .83rem; color: #aaa; display: flex; gap: 10px; align-items: flex-start; }
-    .precio-includes li::before { content: '✓'; color: var(--gold); font-weight: 700; min-width: 14px; }
-    .precio-note { font-size: .75rem; color: #555; border-top: 1px solid var(--border); padding-top: 16px; line-height: 1.5; }
+    .material-item h4 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
+    .material-item p { font-size: .8rem; color: #777; line-height: 1.5; }
 
     /* ── Galería ── */
     #galeria { background: var(--black); }
@@ -263,15 +288,10 @@
     }
     .gallery-item {
       border-radius: var(--radius); overflow: hidden;
-      position: relative; background: #111;
-      border: 1px solid var(--border);
-      cursor: pointer;
+      position: relative; background: #111; border: 1px solid var(--border); cursor: pointer;
     }
     .gallery-item.span2 { grid-row: span 2; }
-    .gallery-item img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform .4s;
-    }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
     .gallery-item:hover img { transform: scale(1.04); }
     .gallery-item .overlay {
       position: absolute; inset: 0;
@@ -285,16 +305,6 @@
       color: var(--gold); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
       padding: 5px 12px; border-radius: 4px;
     }
-    /* Placeholder estilo cuando no hay foto */
-    .gallery-item .photo-placeholder {
-      position: absolute; inset: 0; display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 10px;
-      background: #111; color: #333;
-    }
-    .gallery-item img[src=""] ~ .photo-placeholder,
-    .gallery-item img:not([src]) ~ .photo-placeholder { display: flex; }
-    .photo-placeholder-icon { font-size: 2rem; filter: grayscale(1); opacity: .4; }
-    .photo-placeholder-txt { font-size: .75rem; color: #333; }
 
     /* ── Testimonios ── */
     #testimonios { background: var(--dark); }
@@ -389,27 +399,47 @@
 
     /* ── Contacto ── */
     #contacto { background: var(--dark); }
-    .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
-    @media (max-width: 720px) { .contact-wrap { grid-template-columns: 1fr; } }
-    .contact-cards { display: flex; flex-direction: column; gap: 14px; }
-    .ccard {
-      display: flex; gap: 14px; align-items: center;
-      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 18px 20px; transition: border-color .2s;
+    /* 3 main channel buttons */
+    .contact-channels {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px;
     }
-    .ccard:hover { border-color: rgba(201,168,76,.3); }
-    .ccard-icon { font-size: 1.3rem; width: 44px; height: 44px; min-width: 44px; background: rgba(201,168,76,.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
-    .ccard small { display: block; font-size: .7rem; color: #666; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 3px; }
-    .ccard strong { font-size: 1rem; }
-    .wa-box {
-      margin-top: 8px; padding: 20px; border-radius: var(--radius);
-      background: rgba(37,211,102,.06); border: 1px solid rgba(37,211,102,.2);
+    @media (max-width: 600px) { .contact-channels { grid-template-columns: 1fr; } }
+    .channel-btn {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 12px; padding: 28px 20px;
+      border-radius: var(--radius); border: 2px solid; text-align: center;
+      transition: transform .2s, box-shadow .2s; cursor: pointer; text-decoration: none;
     }
-    .wa-box p { font-size: .87rem; color: #aaa; margin-bottom: 14px; line-height: 1.6; }
+    .channel-btn:hover { transform: translateY(-4px); }
+    .channel-btn-wa {
+      background: rgba(37,211,102,.08); border-color: rgba(37,211,102,.35); color: var(--wa);
+    }
+    .channel-btn-wa:hover { background: rgba(37,211,102,.14); box-shadow: 0 8px 28px rgba(37,211,102,.2); }
+    .channel-btn-tel {
+      background: rgba(201,168,76,.06); border-color: rgba(201,168,76,.3); color: var(--gold-l);
+    }
+    .channel-btn-tel:hover { background: rgba(201,168,76,.12); box-shadow: 0 8px 28px rgba(201,168,76,.15); }
+    .channel-btn-mail {
+      background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.14); color: #ccc;
+    }
+    .channel-btn-mail:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.3); box-shadow: 0 8px 28px rgba(255,255,255,.05); color: #fff; }
+    .channel-icon { font-size: 2rem; }
+    .channel-title { font-size: 1rem; font-weight: 700; }
+    .channel-detail { font-size: .82rem; opacity: .7; }
+    .channel-action { font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; margin-top: 4px; opacity: .9; }
+
+    .contact-divider {
+      display: flex; align-items: center; gap: 16px; margin-bottom: 36px;
+      font-size: .82rem; color: #555;
+    }
+    .contact-divider::before, .contact-divider::after {
+      content: ''; flex: 1; height: 1px; background: rgba(255,255,255,.07);
+    }
+
     /* Form */
-    .contact-form { display: flex; flex-direction: column; gap: 14px; }
+    .contact-form { display: flex; flex-direction: column; gap: 14px; max-width: 680px; margin-inline: auto; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    @media (max-width: 420px) { .form-row { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
     .fg { display: flex; flex-direction: column; gap: 5px; }
     label { font-size: .72rem; color: #777; letter-spacing: .08em; text-transform: uppercase; }
     input, textarea, select {
@@ -420,14 +450,22 @@
     input:focus, textarea:focus, select:focus { border-color: rgba(201,168,76,.45); }
     textarea { resize: vertical; min-height: 110px; }
     select option { background: #1a1a1a; }
-    .form-note { font-size: .75rem; color: #555; }
-    .btn-form {
+    .form-note { font-size: .75rem; color: #555; text-align: center; }
+    .form-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-form-wa {
       background: var(--wa); color: #fff; border: none;
       padding: 14px 28px; border-radius: 6px; font-size: .95rem; font-weight: 700;
-      cursor: pointer; transition: background .2s; align-self: flex-start;
+      cursor: pointer; transition: background .2s;
       display: flex; align-items: center; gap: 8px;
     }
-    .btn-form:hover { background: var(--wa-d); }
+    .btn-form-wa:hover { background: var(--wa-d); }
+    .btn-form-mail {
+      background: transparent; color: #aaa; border: 2px solid rgba(255,255,255,.15);
+      padding: 14px 28px; border-radius: 6px; font-size: .95rem; font-weight: 600;
+      cursor: pointer; transition: all .2s;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .btn-form-mail:hover { border-color: var(--gold); color: var(--gold-l); }
 
     /* ── Footer ── */
     footer { background: #0d0d0d; border-top: 1px solid var(--border); padding: 48px 0 24px; }
@@ -453,11 +491,60 @@
     .float-wa .wa-icon { font-size: 1.1rem; }
     @media (max-width: 480px) { .float-wa .float-label { display: none; } .float-wa { padding: 16px; border-radius: 50%; } }
 
+    /* ── Equipamiento profesional ── */
+    #equipamiento { background: var(--black); }
+    .equip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px; margin-bottom: 40px;
+    }
+    .equip-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 30px 26px;
+      transition: border-color .2s, transform .2s;
+    }
+    .equip-card:hover { border-color: rgba(201,168,76,.35); transform: translateY(-3px); }
+    .equip-card-icon { font-size: 2rem; margin-bottom: 16px; }
+    .equip-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+    .equip-card p { font-size: .85rem; color: #777; line-height: 1.6; }
+    .equip-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.2);
+      border-radius: 6px; padding: 5px 14px; font-size: .78rem; color: var(--gold);
+      letter-spacing: .04em;
+    }
+    .equip-ventajas-wrap {
+      background: linear-gradient(135deg, rgba(201,168,76,.06) 0%, rgba(201,168,76,.02) 100%);
+      border: 1px solid rgba(201,168,76,.18); border-radius: var(--radius);
+      padding: 32px 36px; margin-bottom: 20px;
+    }
+    .equip-ventajas-title {
+      font-size: .72rem; letter-spacing: .18em; text-transform: uppercase;
+      color: #666; margin-bottom: 20px;
+    }
+    .equip-ventajas {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px 32px;
+    }
+    @media (max-width: 540px) {
+      .equip-ventajas { grid-template-columns: 1fr; }
+      .equip-ventajas-wrap { padding: 24px 20px; }
+    }
+    .equip-ventaja-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: .87rem; color: #ccc;
+    }
+    .equip-ventaja-check { color: var(--gold); font-weight: 700; font-size: .9rem; min-width: 16px; }
+    .equip-trust-note {
+      background: rgba(255,255,255,.025); border: 1px solid var(--border);
+      border-radius: 8px; padding: 18px 24px;
+      font-size: .85rem; color: #777; text-align: center; font-style: italic;
+    }
+
     /* ── Reveal ── */
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity .5s ease, transform .5s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* ── Mobile global tweaks ── */
+    /* ── Mobile global ── */
     @media (max-width: 480px) {
       .section { padding: 60px 0; }
       .btn { padding: 14px 22px; font-size: .9rem; }
@@ -473,13 +560,12 @@
 <nav id="main-nav">
   <a class="nav-logo" href="#inicio">Pipe<em>&amp;</em>Drape <span style="color:#333;font-weight:400;font-size:.9rem">Zaragoza</span></a>
   <div class="nav-links">
-    <a href="#como">Cómo funciona</a>
-    <a href="#precios">Precios</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-    <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape.%20%C2%BFPodr%C3%ADais%20darme%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="nav-wa">
-      <span>💬</span> WhatsApp
-    </a>
+    <a href="#como" class="nav-hide">Cómo funciona</a>
+    <a href="#material" class="nav-hide">Material</a>
+    <a href="#equipamiento" class="nav-hide">Equipamiento</a>
+    <a href="#galeria" class="nav-hide">Galería</a>
+    <a href="#faq" class="nav-hide">FAQ</a>
+    <a href="#contacto" class="nav-contact">Solicitar presupuesto</a>
   </div>
 </nav>
 
@@ -490,7 +576,7 @@
   <div class="hero-bg"></div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">Disponible en Aragón y alrededores</div>
+      <div class="hero-location-badge">Zaragoza · Aragón · Alrededores</div>
 
       <h1 class="hero-title">
         Alquiler de<br/>
@@ -500,12 +586,19 @@
 
       <p class="hero-sub">
         Fondos de escenario, separadores de espacios y cortinaje profesional para eventos, bodas, congresos y ferias.
-        <strong style="color:#ddd">Presupuesto rápido y sin compromiso.</strong>
+        Solución personalizada para cada evento.
       </p>
 
+      <!-- Availability strip -->
+      <div class="hero-avail">
+        <div class="hero-avail-item"><span>📏</span> <strong>Hasta 21 metros lineales</strong> disponibles</div>
+        <div class="hero-avail-item"><span>🔧</span> Montaje opcional</div>
+        <div class="hero-avail-item"><span>💬</span> Presupuesto sin compromiso</div>
+      </div>
+
       <div class="hero-ctas">
-        <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape%20para%20un%20evento.%20%C2%BFPodr%C3%ADais%20darme%20informaci%C3%B3n%20y%20presupuesto%3F" target="_blank" rel="noopener" class="btn btn-wa">
-          <span>💬</span> Pedir presupuesto por WhatsApp
+        <a href="#contacto" class="btn btn-gold">
+          Solicitar presupuesto
         </a>
         <a href="tel:+34606392650" class="btn btn-call">
           📞 606 392 650
@@ -515,10 +608,10 @@
       <!-- Métricas -->
       <div class="hero-metrics">
         <div class="metric">
-          <span class="metric-icon">⚡</span>
+          <span class="metric-icon">📏</span>
           <div class="metric-text">
-            <strong>Presupuesto rápido</strong>
-            <small>En menos de 24h</small>
+            <strong>Hasta 21 m lineales</strong>
+            <small>Disponibles</small>
           </div>
         </div>
         <div class="metric">
@@ -546,10 +639,10 @@
 <div id="trust-bar">
   <div class="container">
     <div class="trust-bar-inner">
-      <div class="trust-item"><span>✅</span> <small>Servicio en Aragón y provincias cercanas</small></div>
-      <div class="trust-item"><span>💬</span> <small>Atención rápida por WhatsApp</small></div>
-      <div class="trust-item"><span>💰</span> <small>Presupuesto gratuito y sin compromiso</small></div>
-      <div class="trust-item"><span>🔧</span> <small>Posibilidad de montaje incluido</small></div>
+      <div class="trust-item"><span class="trust-check">✓</span> Hasta 21 metros lineales disponibles</div>
+      <div class="trust-item"><span class="trust-check">✓</span> Servicio en Zaragoza y Aragón</div>
+      <div class="trust-item"><span class="trust-check">✓</span> Transporte y montaje opcionales</div>
+      <div class="trust-item"><span class="trust-check">✓</span> Presupuesto sin compromiso</div>
     </div>
   </div>
 </div>
@@ -567,13 +660,13 @@
     <div class="steps reveal">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Nos indicas medidas</h3>
-        <p>Cuéntanos el espacio, la altura y la longitud que necesitas cubrir. Por WhatsApp o teléfono.</p>
+        <h3>Cuéntanos tu evento</h3>
+        <p>Indícanos el espacio, la altura y la longitud que necesitas cubrir. Por teléfono, email o WhatsApp.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Te enviamos presupuesto</h3>
-        <p>Recibes un presupuesto claro y sin letra pequeña en menos de 24 horas. Sin compromiso.</p>
+        <h3>Recibimos tu propuesta</h3>
+        <p>Te enviamos una propuesta personalizada y detallada en menos de 24 horas, sin ningún compromiso.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
@@ -587,8 +680,8 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:44px" class="reveal">
-      <a href="https://wa.me/34606392650?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20alquiler%20de%20Pipe%20%26%20Drape" target="_blank" rel="noopener" class="btn btn-wa">
-        💬 Empezar por WhatsApp
+      <a href="#contacto" class="btn btn-gold">
+        Consultar disponibilidad
       </a>
     </div>
   </div>
@@ -602,7 +695,7 @@
     <div class="reveal">
       <div class="label">Ventajas</div>
       <h2 class="h2">¿Por qué elegir Pipe &amp; Drape?</h2>
-      <p class="sub">La alternativa inteligente a producciones caras. Resultado profesional, coste razonable.</p>
+      <p class="sub">La alternativa inteligente a producciones caras. Resultado profesional, sin complicaciones.</p>
     </div>
     <div class="porq-grid reveal">
       <div class="porq-card">
@@ -635,73 +728,159 @@
 </section>
 
 <!-- ════════════════════════════════════════
-     PRECIOS ORIENTATIVOS
+     MATERIAL DISPONIBLE
 ════════════════════════════════════════ -->
-<section id="precios" class="section">
+<section id="material" class="section">
   <div class="container">
-    <div style="text-align:center;margin-bottom:50px" class="reveal">
-      <div class="label">Tarifas</div>
-      <h2 class="h2">Configuraciones y <span class="gold">precios orientativos</span></h2>
-      <p class="sub" style="margin-inline:auto">Pídenos presupuesto exacto para tu evento: el precio final depende de distancia, fecha y configuración.</p>
+    <div class="reveal">
+      <div class="label">Disponibilidad</div>
+      <h2 class="h2">Material disponible</h2>
+      <p class="sub">Equipamiento profesional preparado para adaptarse a las necesidades de tu evento.</p>
     </div>
-    <div class="precios-grid reveal">
 
-      <div class="precio-card">
-        <div class="precio-icon">🎬</div>
-        <h3>Fondo de escenario pequeño</h3>
-        <div class="precio-range">Desde <small>consultar</small></div>
-        <p class="precio-desc">Ideal para conferencias, ruedas de prensa, actos de empresa o fondos para grabación de video.</p>
-        <ul class="precio-includes">
-          <li>Hasta ~4 m de ancho</li>
-          <li>Altura ajustable</li>
-          <li>Cortinaje negro de calidad</li>
-          <li>Entrega en Zaragoza ciudad</li>
-        </ul>
-        <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20fondo%20de%20escenario%20peque%C3%B1o.%20%C2%BFPodr%C3%ADais%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-wa btn-sm">💬 Consultar precio</a>
-        <p class="precio-note">⚠️ Precio orientativo. Transporte y montaje según ubicación.</p>
+    <div class="material-highlight reveal">
+      <div class="material-num-wrap">
+        <span class="material-num">21 m</span>
+        <div class="material-num-label">lineales disponibles</div>
       </div>
-
-      <div class="precio-card featured">
-        <div class="precio-badge">Más solicitado</div>
-        <div class="precio-icon">🏛️</div>
-        <h3>Fondo de escenario medio</h3>
-        <div class="precio-range">Desde <small>consultar</small></div>
-        <p class="precio-desc">Para bodas, congresos, galas, eventos corporativos y espectáculos. El más versátil y solicitado.</p>
-        <ul class="precio-includes">
-          <li>Hasta ~8 m de ancho</li>
-          <li>Altura ajustable (hasta 4 m aprox.)</li>
-          <li>Cortinaje negro premium</li>
-          <li>Compatible con iluminación y AV</li>
-          <li>Montaje disponible</li>
-        </ul>
-        <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20fondo%20de%20escenario%20medio.%20%C2%BFPodr%C3%ADais%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-wa btn-sm">💬 Consultar precio</a>
-        <p class="precio-note">⚠️ Precio orientativo. Transporte y montaje según ubicación.</p>
-      </div>
-
-      <div class="precio-card">
-        <div class="precio-icon">🪄</div>
-        <h3>Separador de espacios</h3>
-        <div class="precio-range">Desde <small>consultar</small></div>
-        <p class="precio-desc">Divide salones, crea zonas VIP, backstage, catering o accesos exclusivos de forma elegante y rápida.</p>
-        <ul class="precio-includes">
-          <li>Longitud a medida</li>
-          <li>Altura ajustable</li>
-          <li>Configurable en L o en línea</li>
-          <li>Ideal para ferias y exposiciones</li>
-        </ul>
-        <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20separador%20de%20espacios.%20%C2%BFPodr%C3%ADais%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-wa btn-sm">💬 Consultar precio</a>
-        <p class="precio-note">⚠️ Precio orientativo. Transporte y montaje según ubicación.</p>
-      </div>
-
+      <div class="material-divider"></div>
+      <p class="material-desc">
+        Disponemos de <strong>hasta 21 metros lineales</strong> de Pipe &amp; Drape profesional para adaptarnos a eventos de diferentes tamaños y necesidades.
+        Desde pequeños fondos de escenario hasta grandes separaciones de espacios, contamos con el material para tu evento.
+      </p>
     </div>
-    <p class="reveal" style="text-align:center;margin-top:24px;font-size:.82rem;color:#555">
-      ⚠️ Todos los precios son orientativos. El presupuesto final incluye transporte y montaje según ubicación y configuración específica del evento.
-    </p>
+
+    <div class="material-grid reveal">
+      <div class="material-item">
+        <div class="material-item-icon">📏</div>
+        <div>
+          <h4>Hasta 21 metros lineales disponibles</h4>
+          <p>Capacidad para cubrir espacios grandes o combinar varias configuraciones en un mismo evento.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🔧</div>
+        <div>
+          <h4>Sistema modular adaptable</h4>
+          <p>Altura y longitud ajustables para adaptarse a cualquier espacio, techo o requerimiento del evento.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🎤</div>
+        <div>
+          <h4>Fondos de escenario</h4>
+          <p>Fondo negro profesional para ponentes, presentaciones, actuaciones y ruedas de prensa.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🪟</div>
+        <div>
+          <h4>Separación de espacios</h4>
+          <p>Divide salones, crea zonas VIP, backstage o catering de forma rápida y elegante.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🙈</div>
+        <div>
+          <h4>Ocultación de zonas técnicas</h4>
+          <p>Escamotea almacenes, instalaciones técnicas o cualquier zona que no deba estar a la vista.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🖤</div>
+        <div>
+          <h4>Cortinaje profesional de alta calidad</h4>
+          <p>Tela de calidad en color negro, sin brillos, con caída perfecta y aspecto impecable.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🛠️</div>
+        <div>
+          <h4>Montaje y desmontaje opcional</h4>
+          <p>Nos encargamos de montarlo antes del evento y recogerlo al terminar. Solo tienes que disfrutar.</p>
+        </div>
+      </div>
+      <div class="material-item">
+        <div class="material-item-icon">🚐</div>
+        <div>
+          <h4>Transporte disponible</h4>
+          <p>Desplazamiento a Zaragoza, toda Aragón y provincias limítrofes. Consulta tu ubicación.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="#contacto" class="btn btn-gold">Consultar disponibilidad para tu evento</a>
+    </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════
-     GALERÍA (slots para fotos reales)
+     EQUIPAMIENTO PROFESIONAL
+════════════════════════════════════════ -->
+<section id="equipamiento" class="section">
+  <div class="container">
+    <div class="reveal">
+      <div class="label">Calidad certificada</div>
+      <h2 class="h2">Equipamiento <span class="gold">profesional</span></h2>
+      <p class="sub">Material de referencia en el sector de eventos, escenarios y producciones. Calidad, seguridad y fiabilidad garantizadas.</p>
+    </div>
+
+    <!-- 4 tarjetas principales -->
+    <div class="equip-grid reveal">
+      <div class="equip-card">
+        <div class="equip-card-icon">🏆</div>
+        <h3>Estructura WENTEX</h3>
+        <p>Trabajamos con sistema profesional <strong style="color:var(--gold-l)">WENTEX</strong>, una de las marcas de referencia en equipamiento para eventos, escenarios y producciones.</p>
+        <div style="margin-top:16px"><span class="equip-badge">Sistema WENTEX</span></div>
+      </div>
+      <div class="equip-card">
+        <div class="equip-card-icon">🔥</div>
+        <h3>Cortinaje Molton ignífugo</h3>
+        <p>Utilizamos telones Molton <strong style="color:var(--gold-l)">300 g/m²</strong> certificados ignífugos, adecuados para eventos, escenarios, congresos, ferias y espacios públicos.</p>
+        <div style="margin-top:16px"><span class="equip-badge">300 g/m² · Certificado ignífugo</span></div>
+      </div>
+      <div class="equip-card">
+        <div class="equip-card-icon">↕️</div>
+        <h3>Altura regulable</h3>
+        <p>La estructura permite configuraciones desde <strong style="color:var(--gold-l)">1,80 metros hasta 3 metros</strong> de altura, adaptándose a diferentes necesidades de montaje.</p>
+        <div style="margin-top:16px"><span class="equip-badge">1,80 m – 3,00 m</span></div>
+      </div>
+      <div class="equip-card">
+        <div class="equip-card-icon">🔧</div>
+        <h3>Sistema modular</h3>
+        <p>Hasta <strong style="color:var(--gold-l)">21 metros lineales</strong> disponibles para crear fondos de escenario, divisiones de espacios y ocultación de zonas técnicas.</p>
+        <div style="margin-top:16px"><span class="equip-badge">Hasta 21 m lineales</span></div>
+      </div>
+    </div>
+
+    <!-- Ventajas destacadas -->
+    <div class="reveal">
+      <div class="equip-ventajas-wrap">
+        <p class="equip-ventajas-title">Ventajas destacadas</p>
+        <div class="equip-ventajas">
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Sistema profesional WENTEX</div>
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Montaje y desmontaje opcional</div>
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Telón Molton 3 × 3 metros</div>
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Transporte disponible</div>
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Certificación ignífuga</div>
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Hasta 21 metros lineales disponibles</div>
+          <div class="equip-ventaja-item"><span class="equip-ventaja-check">✓</span> Altura regulable de 1,80 m a 3 m</div>
+        </div>
+      </div>
+      <div class="equip-trust-note">
+        Material profesional utilizado habitualmente en eventos corporativos, congresos, ferias, espectáculos y producciones audiovisuales.
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="#contacto" class="btn btn-gold">Consultar disponibilidad</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     GALERÍA
 ════════════════════════════════════════ -->
 <section id="galeria" class="section">
   <div class="container">
@@ -712,19 +891,16 @@
     </div>
     <div class="gallery-grid reveal">
 
-      <!-- Foto principal: fondo de escenario con tarima -->
       <div class="gallery-item span2">
         <img src="img13.jpg" alt="Fondo de escenario Pipe & Drape negro con tarima en evento Zaragoza" loading="lazy">
         <div class="overlay"><span class="overlay-tag">Fondo de escenario</span></div>
       </div>
 
-      <!-- Foto 2: flight case -->
       <div class="gallery-item">
         <img src="img15.jpg" alt="Flight case transporte Pipe & Drape Zaragoza" loading="lazy">
         <div class="overlay"><span class="overlay-tag">Transporte en flight case</span></div>
       </div>
 
-      <!-- Foto 3: pared larga de drape -->
       <div class="gallery-item">
         <img src="img17.jpg" alt="Pared de Pipe & Drape negro separador de espacios Aragón" loading="lazy">
         <div class="overlay"><span class="overlay-tag">Separador de espacios</span></div>
@@ -732,7 +908,7 @@
 
     </div>
     <p class="reveal" style="text-align:center;margin-top:20px;font-size:.83rem;color:#555">
-      ¿Quieres ver más? Escríbenos por <a href="https://wa.me/34606392650" target="_blank" rel="noopener" style="color:var(--wa)">WhatsApp</a> y te enviamos más imágenes.
+      ¿Quieres ver más ejemplos? <a href="mailto:plutocapili@gmail.com" style="color:var(--gold)">Escríbenos</a> y te enviamos más imágenes.
     </p>
   </div>
 </section>
@@ -744,7 +920,7 @@
   <div class="container">
     <div style="text-align:center;margin-bottom:44px" class="reveal">
       <div class="label">Clientes</div>
-      <h2 class="h2">Lo que dicen quienes ya lo han usado</h2>
+      <h2 class="h2">Lo que dicen quienes ya lo han utilizado</h2>
     </div>
     <div class="testi-grid reveal">
 
@@ -774,7 +950,7 @@
 
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"En nuestra feria de empresa necesitábamos delimitar el stand y el resultado fue impresionante. Servicio muy atento, precio razonable y llegaron puntuales. 100% recomendable."</p>
+        <p class="testi-text">"En nuestra feria de empresa necesitábamos delimitar el stand y el resultado fue impresionante. Servicio muy atento y llegaron puntuales. 100% recomendable."</p>
         <div class="testi-author">
           <div class="testi-avatar">R</div>
           <div class="testi-name">
@@ -800,6 +976,13 @@
     </div>
     <div class="confianza-grid reveal">
       <div class="confianza-card">
+        <div class="confianza-icon">📏</div>
+        <div>
+          <h4>Hasta 21 metros lineales disponibles</h4>
+          <p>Material suficiente para eventos pequeños y grandes. Configuramos lo que necesitas para tu espacio.</p>
+        </div>
+      </div>
+      <div class="confianza-card">
         <div class="confianza-icon">📍</div>
         <div>
           <h4>Servicio en Aragón y provincias cercanas</h4>
@@ -807,24 +990,17 @@
         </div>
       </div>
       <div class="confianza-card">
-        <div class="confianza-icon">💰</div>
-        <div>
-          <h4>Presupuesto gratuito y sin compromiso</h4>
-          <p>Pide presupuesto sin ninguna obligación. Te respondemos rápido con un precio claro y detallado.</p>
-        </div>
-      </div>
-      <div class="confianza-card">
         <div class="confianza-icon">🔧</div>
         <div>
-          <h4>Posibilidad de montaje y desmontaje</h4>
+          <h4>Transporte y montaje opcionales</h4>
           <p>Podemos ocuparnos de todo: transporte, montaje antes del evento y recogida al terminar.</p>
         </div>
       </div>
       <div class="confianza-card">
         <div class="confianza-icon">💬</div>
         <div>
-          <h4>Atención rápida por WhatsApp</h4>
-          <p>Contacto directo, respuesta ágil. Sin formularios complicados ni esperas innecesarias.</p>
+          <h4>Presupuesto sin compromiso</h4>
+          <p>Contacto directo y respuesta ágil. Cada presupuesto es personalizado para las necesidades de tu evento.</p>
         </div>
       </div>
     </div>
@@ -839,13 +1015,13 @@
     <div class="reveal">
       <div class="label">Aplicaciones</div>
       <h2 class="h2">¿Para qué tipo de evento es ideal?</h2>
-      <p class="sub">Versátil y adaptable. Si tienes un evento, probablemente lo necesitas.</p>
+      <p class="sub">Versátil y adaptable. Una solución profesional para cada necesidad.</p>
     </div>
     <div class="usos-grid reveal">
       <div class="uso-card">
         <div class="uso-icon">💍</div>
         <h3>Bodas</h3>
-        <p>Fondos de altar, separadores de zona cóctel, decoración de salón. Resultado de revista con inversión mínima.</p>
+        <p>Fondos de altar, separadores de zona cóctel, decoración de salón. Resultado elegante con inversión razonable.</p>
       </div>
       <div class="uso-card">
         <div class="uso-icon">🏢</div>
@@ -881,14 +1057,15 @@
 ════════════════════════════════════════ -->
 <section id="cta-main">
   <div class="container">
-    <div class="label" style="text-align:center">Sin esperas</div>
-    <h2 class="h2 reveal">¿Tienes un evento próximo?<br/><span class="gold">Escríbenos ahora y recibe tu presupuesto</span></h2>
-    <p class="reveal">Respuesta en menos de 24 horas. Sin letra pequeña.</p>
+    <div class="label" style="text-align:center">Propuesta personalizada</div>
+    <h2 class="h2 reveal">¿Tienes un evento en mente?<br/><span class="gold">Cuéntanoslo y recibe una propuesta a medida</span></h2>
+    <p class="reveal">Cada evento es diferente. Nos adaptamos a tu espacio, fecha y necesidades.</p>
     <div class="cta-btns reveal">
-      <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape%20para%20un%20evento.%20%C2%BFPodr%C3%ADais%20darme%20informaci%C3%B3n%20y%20presupuesto%3F" target="_blank" rel="noopener" class="btn btn-wa">
-        💬 Pedir presupuesto por WhatsApp
+      <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape%20para%20un%20evento.%20%C2%BFPodr%C3%ADais%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-wa">
+        💬 WhatsApp
       </a>
-      <a href="tel:+34606392650" class="btn btn-call">📞 Llamar: 606 392 650</a>
+      <a href="tel:+34606392650" class="btn btn-call">📞 606 392 650</a>
+      <a href="mailto:plutocapili@gmail.com?subject=Consulta%20alquiler%20Pipe%20%26%20Drape" class="btn btn-email">✉️ Enviar email</a>
     </div>
   </div>
 </section>
@@ -913,7 +1090,7 @@
           <li>Lleida y Cataluña occidental</li>
           <li>Soria y Castilla y León limítrofe</li>
         </ul>
-        <a href="https://wa.me/34606392650?text=Hola%2C%20quiero%20consultar%20si%20dan%C3%A9is%20servicio%20en%20mi%20localidad." target="_blank" rel="noopener" class="btn btn-wa btn-sm">💬 Consultar mi ubicación</a>
+        <a href="mailto:plutocapili@gmail.com?subject=Consulta%20disponibilidad%20Pipe%20%26%20Drape" class="btn btn-outline btn-sm">Consultar disponibilidad en mi zona</a>
       </div>
       <div class="zona-box">
         <div class="zona-box-icon">📍</div>
@@ -943,28 +1120,28 @@
         <div class="faq-a">El Pipe &amp; Drape es un sistema modular de postes y travesaños metálicos del que se cuelgan cortinas de tela. Se utiliza para crear fondos de escenario, separadores de ambiente, mamparas decorativas y particiones temporales en cualquier tipo de evento. Su aspecto es elegante, profesional y muy versátil.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">¿Cuánto cuesta el alquiler de Pipe &amp; Drape en Zaragoza?</div>
-        <div class="faq-a">El precio depende de la configuración (ancho, altura, número de módulos), la fecha, la distancia y si incluye montaje. Pídenos presupuesto por WhatsApp o teléfono: te damos un precio claro y detallado en menos de 24 horas, sin compromiso.</div>
+        <div class="faq-q">¿Cuánto material tenéis disponible?</div>
+        <div class="faq-a">Disponemos de hasta 21 metros lineales de Pipe &amp; Drape profesional. Esto permite cubrir desde pequeños fondos de escenario hasta grandes separaciones de espacios, o incluso varias configuraciones en un mismo evento. Consulta la disponibilidad para tu fecha y necesidades concretas.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cómo puedo solicitar presupuesto?</div>
+        <div class="faq-a">Puedes contactarnos por WhatsApp (606 392 650), teléfono o email (plutocapili@gmail.com). Cuéntanos las medidas aproximadas, el tipo de evento, la fecha y la ubicación. Te enviamos una propuesta personalizada en menos de 24 horas, sin ningún compromiso.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">¿Hacéis el montaje vosotros?</div>
-        <div class="faq-a">Sí. Podemos encargarnos del transporte, montaje antes del evento y desmontaje al finalizar. Consúltanos al pedir presupuesto para incluirlo en el servicio. También es posible la autoinstalación si lo prefieres.</div>
+        <div class="faq-a">Sí. Podemos encargarnos del transporte, montaje antes del evento y desmontaje al finalizar. Consúltanos al pedir presupuesto para incluirlo en la propuesta. También es posible la autoinstalación si lo prefieres.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">¿Cuánto tiempo se tarda en montar?</div>
         <div class="faq-a">El montaje es muy rápido: una configuración estándar de 6 metros de fondo puede estar lista en menos de 30 minutos. No requiere herramientas especializadas.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">¿Qué alturas y longitudes están disponibles?</div>
-        <div class="faq-a">El sistema es completamente modulable. La altura se ajusta en un rango amplio (techos bajos o grandes alturas). La longitud se amplía añadiendo módulos. Cuéntanos tus medidas y te confirmamos disponibilidad.</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q">¿Se puede combinar con iluminación o audiovisuales?</div>
         <div class="faq-a">Sí, es uno de sus grandes puntos fuertes. El negro es el lienzo perfecto para focos LED, luz de color, proyecciones y cualquier elemento audiovisual. El resultado visual es siempre impactante.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">¿Con cuánta antelación hay que reservar?</div>
-        <div class="faq-a">Recomendamos reservar con la mayor antelación posible, especialmente en temporada alta. Pero también atendemos solicitudes de última hora según disponibilidad. Contáctanos y buscamos solución.</div>
+        <div class="faq-q">¿Dáis servicio fuera de Zaragoza?</div>
+        <div class="faq-a">Sí. Con base en Zaragoza, cubrimos toda la comunidad de Aragón (Huesca, Zaragoza, Teruel) y también nos desplazamos a La Rioja, Navarra, Lleida y otras provincias limítrofes. Consulta disponibilidad para tu ubicación.</div>
       </div>
     </div>
   </div>
@@ -975,90 +1152,87 @@
 ════════════════════════════════════════ -->
 <section id="contacto" class="section">
   <div class="container">
-    <div class="label">Contacto directo</div>
-    <h2 class="h2">Solicita tu presupuesto <span class="gold">gratis</span></h2>
-    <p class="sub">Sin compromiso. Respuesta en menos de 24 horas.</p>
-    <div class="contact-wrap reveal">
+    <div style="text-align:center;margin-bottom:12px">
+      <div class="label">Contacto</div>
+      <h2 class="h2">Solicita presupuesto o consulta disponibilidad</h2>
+      <p class="sub" style="margin-inline:auto;margin-bottom:40px">Cuéntanos tu evento por el canal que prefieras. Respondemos en menos de 24 horas, sin compromiso.</p>
+    </div>
 
-      <div class="contact-cards">
-        <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape.%20%C2%BFPodr%C3%ADais%20darme%20informaci%C3%B3n%20y%20presupuesto%3F" target="_blank" rel="noopener" class="ccard">
-          <div class="ccard-icon">💬</div>
-          <div>
-            <small>Whatsapp – respuesta más rápida</small>
-            <strong style="color:#25D366">606 392 650</strong>
-          </div>
-        </a>
-        <a href="tel:+34606392650" class="ccard">
-          <div class="ccard-icon">📞</div>
-          <div>
-            <small>Teléfono</small>
-            <strong>606 392 650</strong>
-          </div>
-        </a>
-        <a href="mailto:plutocapili@gmail.com" class="ccard">
-          <div class="ccard-icon">✉️</div>
-          <div>
-            <small>Email</small>
-            <strong>plutocapili@gmail.com</strong>
-          </div>
-        </a>
-        <div class="ccard">
-          <div class="ccard-icon">📍</div>
-          <div>
-            <small>Ubicación</small>
-            <strong>Zaragoza, Aragón</strong>
-          </div>
+    <!-- 3 canales iguales -->
+    <div class="contact-channels reveal">
+
+      <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape%20para%20un%20evento.%20%C2%BFPodr%C3%ADais%20darme%20informaci%C3%B3n%20y%20una%20propuesta%3F"
+         target="_blank" rel="noopener" class="channel-btn channel-btn-wa">
+        <span class="channel-icon">💬</span>
+        <span class="channel-title">WhatsApp</span>
+        <span class="channel-detail">606 392 650</span>
+        <span class="channel-action">Escribir ahora →</span>
+      </a>
+
+      <a href="tel:+34606392650" class="channel-btn channel-btn-tel">
+        <span class="channel-icon">📞</span>
+        <span class="channel-title">Teléfono</span>
+        <span class="channel-detail">606 392 650</span>
+        <span class="channel-action">Llamar ahora →</span>
+      </a>
+
+      <a href="mailto:plutocapili@gmail.com?subject=Consulta%20alquiler%20Pipe%20%26%20Drape%20en%20Zaragoza"
+         class="channel-btn channel-btn-mail">
+        <span class="channel-icon">✉️</span>
+        <span class="channel-title">Email</span>
+        <span class="channel-detail">plutocapili@gmail.com</span>
+        <span class="channel-action">Enviar email →</span>
+      </a>
+
+    </div>
+
+    <!-- Formulario -->
+    <div class="contact-divider reveal">O rellena el formulario y te contactamos nosotros</div>
+
+    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="fg">
+          <label for="nombre">Nombre *</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
         </div>
-        <div class="wa-box">
-          <p>💬 <strong style="color:#25D366">La forma más rápida:</strong> escríbenos directamente por WhatsApp con las medidas y la fecha de tu evento y te respondemos en minutos.</p>
-          <a href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape%20para%20un%20evento.%20%C2%BFPodr%C3%ADais%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="btn btn-wa">
-            💬 Abrir WhatsApp ahora
-          </a>
+        <div class="fg">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" autocomplete="tel" inputmode="tel" />
         </div>
       </div>
-
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <div class="fg">
-            <label for="nombre">Nombre *</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
-          </div>
-          <div class="fg">
-            <label for="telefono">Teléfono *</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" required autocomplete="tel" inputmode="tel" />
-          </div>
+      <div class="fg">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+      </div>
+      <div class="form-row">
+        <div class="fg">
+          <label for="tipo">Tipo de evento</label>
+          <select id="tipo" name="tipo">
+            <option value="">Seleccionar...</option>
+            <option>Boda</option>
+            <option>Corporativo / Empresa</option>
+            <option>Congreso / Conferencia</option>
+            <option>Feria / Exposición</option>
+            <option>Espectáculo / Concierto</option>
+            <option>Producción audiovisual</option>
+            <option>Otro</option>
+          </select>
         </div>
         <div class="fg">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" />
+          <label for="fecha">Fecha del evento</label>
+          <input type="date" id="fecha" name="fecha" />
         </div>
-        <div class="form-row">
-          <div class="fg">
-            <label for="tipo">Tipo de evento</label>
-            <select id="tipo" name="tipo">
-              <option value="">Seleccionar...</option>
-              <option>Boda</option>
-              <option>Corporativo / Empresa</option>
-              <option>Congreso / Conferencia</option>
-              <option>Feria / Exposición</option>
-              <option>Espectáculo / Concierto</option>
-              <option>Producción audiovisual</option>
-              <option>Otro</option>
-            </select>
-          </div>
-          <div class="fg">
-            <label for="fecha">Fecha del evento</label>
-            <input type="date" id="fecha" name="fecha" />
-          </div>
-        </div>
-        <div class="fg">
-          <label for="mensaje">Cuéntanos tu evento *</label>
-          <textarea id="mensaje" name="mensaje" placeholder="Localización, medidas aproximadas, si necesitas montaje..." required></textarea>
-        </div>
-        <p class="form-note">* Campos obligatorios. No compartimos tus datos con terceros.</p>
-        <button type="submit" class="btn-form">💬 Enviar por WhatsApp</button>
-      </form>
-    </div>
+      </div>
+      <div class="fg">
+        <label for="mensaje">Cuéntanos tu evento *</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Localización, medidas aproximadas, si necesitas montaje, número de asistentes..." required></textarea>
+      </div>
+      <p class="form-note">* Campos obligatorios. No compartimos tus datos con terceros.</p>
+      <div class="form-actions">
+        <button type="button" onclick="submitWA()" class="btn-form-wa">💬 Enviar por WhatsApp</button>
+        <button type="submit" class="btn-form-mail">✉️ Enviar por Email</button>
+      </div>
+    </form>
   </div>
 </section>
 
@@ -1070,14 +1244,15 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="nav-logo">Pipe<em style="color:var(--gold)">&amp;</em>Drape <span style="color:#333;font-weight:400">Zaragoza</span></div>
-        <p>Alquiler profesional de Pipe &amp; Drape para eventos en Zaragoza, Aragón y alrededores.</p>
+        <p>Alquiler profesional de Pipe &amp; Drape para eventos en Zaragoza, Aragón y alrededores. Hasta 21 metros lineales disponibles.</p>
       </div>
       <div class="footer-col">
         <h4>Navegación</h4>
         <ul>
           <li><a href="#como">Cómo funciona</a></li>
           <li><a href="#porque">Por qué elegirnos</a></li>
-          <li><a href="#precios">Precios orientativos</a></li>
+          <li><a href="#material">Material disponible</a></li>
+          <li><a href="#equipamiento">Equipamiento profesional</a></li>
           <li><a href="#galeria">Galería</a></li>
           <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#faq">Preguntas frecuentes</a></li>
@@ -1101,17 +1276,17 @@
 
 <!-- ════ FLOAT WhatsApp ════ -->
 <a id="float-wa"
-   href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape.%20%C2%BFPodr%C3%ADais%20darme%20informaci%C3%B3n%20y%20presupuesto%3F"
-   target="_blank" rel="noopener" class="float-wa" aria-label="Contactar por WhatsApp">
+   href="https://wa.me/34606392650?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20Pipe%20%26%20Drape.%20%C2%BFPodr%C3%ADais%20darme%20m%C3%A1s%20informaci%C3%B3n%3F"
+   target="_blank" rel="noopener" class="float-wa" aria-label="Consultar por WhatsApp">
   <span class="wa-icon">💬</span>
-  <span class="float-label">Pedir presupuesto</span>
+  <span class="float-label">Consultar disponibilidad</span>
 </a>
 
 <script>
   /* ── Scroll reveal ── */
   const ro = new IntersectionObserver(
     es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-    { threshold: 0.1 }
+    { threshold: 0.08 }
   );
   document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 
@@ -1132,31 +1307,61 @@
 
   /* ── Float WA: hide when contact is visible ── */
   const floatWa = document.getElementById('float-wa');
-  const contactSec = document.getElementById('contacto');
   new IntersectionObserver(
     ([e]) => {
-      floatWa.style.opacity   = e.isIntersecting ? '0' : '1';
+      floatWa.style.opacity = e.isIntersecting ? '0' : '1';
       floatWa.style.pointerEvents = e.isIntersecting ? 'none' : 'auto';
     }, { threshold: 0.15 }
-  ).observe(contactSec);
+  ).observe(document.getElementById('contacto'));
 
-  /* ── Form → WhatsApp ── */
+  /* ── Helpers de formulario ── */
+  function getFormData() {
+    const f = document.querySelector('.contact-form');
+    return {
+      nombre:   f.nombre.value,
+      telefono: f.telefono.value,
+      email:    f.email.value,
+      tipo:     f.tipo.value,
+      fecha:    f.fecha.value,
+      mensaje:  f.mensaje.value
+    };
+  }
+
+  /* Enviar por WhatsApp */
+  function submitWA() {
+    const f = getFormData();
+    if (!f.nombre || !f.mensaje) { alert('Por favor, rellena al menos el nombre y el mensaje.'); return; }
+    const msg = [
+      `*Consulta Pipe & Drape – ${f.nombre}*`,
+      ``,
+      `👤 *Nombre:* ${f.nombre}`,
+      f.telefono ? `📞 *Teléfono:* ${f.telefono}` : null,
+      f.email    ? `✉️ *Email:* ${f.email}` : null,
+      f.tipo     ? `🎉 *Evento:* ${f.tipo}` : null,
+      f.fecha    ? `📅 *Fecha:* ${f.fecha}` : null,
+      ``,
+      `📝 *Mensaje:*`,
+      f.mensaje
+    ].filter(Boolean).join('\n');
+    window.open(`https://wa.me/34606392650?text=${encodeURIComponent(msg)}`, '_blank');
+  }
+
+  /* Enviar por Email */
   function handleSubmit(e) {
     e.preventDefault();
-    const f = e.target;
-    const msg = [
-      `*Solicitud de presupuesto – Pipe & Drape*`,
+    const f = getFormData();
+    const subject = encodeURIComponent(`Consulta alquiler Pipe & Drape – ${f.nombre}`);
+    const body = encodeURIComponent([
+      `Nombre: ${f.nombre}`,
+      `Teléfono: ${f.telefono || '—'}`,
+      `Email: ${f.email}`,
+      `Tipo de evento: ${f.tipo || '—'}`,
+      `Fecha: ${f.fecha || '—'}`,
       ``,
-      `👤 *Nombre:* ${f.nombre.value}`,
-      `📞 *Teléfono:* ${f.telefono.value}`,
-      `✉️ *Email:* ${f.email.value || '—'}`,
-      `🎉 *Tipo de evento:* ${f.tipo.value || '—'}`,
-      `📅 *Fecha:* ${f.fecha.value || '—'}`,
-      ``,
-      `📝 *Detalles:*`,
-      f.mensaje.value
-    ].join('\n');
-    window.open(`https://wa.me/34606392650?text=${encodeURIComponent(msg)}`, '_blank');
+      `Mensaje:`,
+      f.mensaje
+    ].join('\n'));
+    window.location.href = `mailto:plutocapili@gmail.com?subject=${subject}&body=${body}`;
   }
 </script>
 </body>
