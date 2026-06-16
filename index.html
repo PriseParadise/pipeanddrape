@@ -15,9 +15,16 @@
   <meta property="og:description" content="Sistema Wentex, telones Molton ignífugos 3x3 m, altura regulable de 1,80 a 3 m y hasta 21 metros lineales disponibles. Servicio en Zaragoza y Aragón." />
   <meta property="og:url" content="https://www.pipeanddrapezaragoza.es/" />
   <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content="https://www.pipeanddrapezaragoza.es/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://www.pipeanddrapezaragoza.es/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Alquiler de Pipe & Drape profesional en Zaragoza" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Alquiler Pipe & Drape Zaragoza" />
   <meta name="twitter:description" content="Hasta 21 metros lineales de Pipe & Drape para eventos en Aragón. Presupuesto personalizado: 606 392 650." />
+  <meta name="twitter:image" content="https://www.pipeanddrapezaragoza.es/og-image.jpg" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -135,7 +142,28 @@
         repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(201,168,76,.03) 60px),
         repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(201,168,76,.03) 60px);
     }
-    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+    .hero-grid {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center;
+    }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+    .hero-content { max-width: 640px; }
+    @media (max-width: 900px) { .hero-content { max-width: 100%; } }
+    .hero-visual {
+      position: relative; border-radius: var(--radius); overflow: hidden;
+      border: 1px solid rgba(201,168,76,.18); aspect-ratio: 4/5; max-height: 600px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.5);
+    }
+    .hero-visual img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-visual::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,.55) 100%);
+      pointer-events: none;
+    }
+    @media (max-width: 900px) { .hero-visual { aspect-ratio: 16/10; max-height: 360px; } }
+    @media (max-width: 480px) { .hero-visual { aspect-ratio: 4/3; max-height: 280px; } }
     .hero-location-badge {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.25);
@@ -358,6 +386,13 @@
     .uso-icon { font-size: 1.6rem; margin-bottom: 12px; }
     .uso-card h3 { font-size: .92rem; font-weight: 700; margin-bottom: 7px; }
     .uso-card p { font-size: .82rem; color: #777; line-height: 1.55; }
+    /* Tarjetas de uso con foto (Bodas / Eventos corporativos) */
+    .uso-card.has-image { padding: 0; display: flex; flex-direction: column; }
+    .uso-card-img { width: 100%; aspect-ratio: 16/10; overflow: hidden; }
+    .uso-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .uso-card.has-image:hover .uso-card-img img { transform: scale(1.06); }
+    .uso-card-body { padding: 20px 22px 24px; }
+    .uso-card-body .uso-icon { font-size: 1.3rem; margin-bottom: 8px; }
 
     /* ── CTA central ── */
     #cta-main {
@@ -576,6 +611,7 @@
 <section id="inicio">
   <div class="hero-bg"></div>
   <div class="container">
+  <div class="hero-grid">
     <div class="hero-content">
       <div class="hero-location-badge">Zaragoza · Aragón · Alrededores</div>
 
@@ -631,6 +667,14 @@
         </div>
       </div>
     </div>
+
+    <div class="hero-visual reveal">
+      <img src="hero-pipe-drape.jpg"
+           alt="Montaje profesional de Pipe & Drape para evento en Zaragoza"
+           width="640" height="800"
+           loading="eager" fetchpriority="high" decoding="async" />
+    </div>
+  </div>
   </div>
 </section>
 
@@ -893,17 +937,17 @@
     <div class="gallery-grid reveal">
 
       <div class="gallery-item span2">
-        <img src="img13.jpg" alt="Fondo de escenario Pipe & Drape negro con tarima en evento Zaragoza" loading="lazy">
+        <img src="pipe-drape-fondo-escenario-zaragoza.jpg" alt="Fondo de escenario con Pipe & Drape profesional en Zaragoza" width="800" height="600" loading="lazy" decoding="async">
         <div class="overlay"><span class="overlay-tag">Fondo de escenario</span></div>
       </div>
 
       <div class="gallery-item">
-        <img src="img15.jpg" alt="Flight case transporte Pipe & Drape Zaragoza" loading="lazy">
+        <img src="pipe-drape-transporte-zaragoza.jpg" alt="Sistema Pipe & Drape transportado en flight case profesional" width="400" height="240" loading="lazy" decoding="async">
         <div class="overlay"><span class="overlay-tag">Transporte en flight case</span></div>
       </div>
 
       <div class="gallery-item">
-        <img src="img17.jpg" alt="Pared de Pipe & Drape negro separador de espacios Aragón" loading="lazy">
+        <img src="pipe-drape-separador-eventos-zaragoza.jpg" alt="Separador de espacios para eventos mediante Pipe & Drape en Aragón" width="400" height="240" loading="lazy" decoding="async">
         <div class="overlay"><span class="overlay-tag">Separador de espacios</span></div>
       </div>
 
@@ -1019,15 +1063,31 @@
       <p class="sub">Versátil y adaptable. Una solución profesional para cada necesidad.</p>
     </div>
     <div class="usos-grid reveal">
-      <div class="uso-card">
-        <div class="uso-icon">💍</div>
-        <h3>Bodas</h3>
-        <p>Fondos de altar, separadores de zona cóctel, decoración de salón. Resultado elegante con inversión razonable.</p>
+      <div class="uso-card has-image">
+        <div class="uso-card-img">
+          <img src="boda-pipe-drape.jpg"
+               alt="Separador de Pipe & Drape decorando una boda en Zaragoza"
+               width="480" height="300"
+               loading="lazy" decoding="async" />
+        </div>
+        <div class="uso-card-body">
+          <div class="uso-icon">💍</div>
+          <h3>Bodas</h3>
+          <p>Fondos de altar, separadores de zona cóctel, decoración de salón. Resultado elegante con inversión razonable.</p>
+        </div>
       </div>
-      <div class="uso-card">
-        <div class="uso-icon">🏢</div>
-        <h3>Eventos corporativos</h3>
-        <p>Presentaciones de producto, team buildings, ruedas de prensa, cenas de empresa. Imagen profesional garantizada.</p>
+      <div class="uso-card has-image">
+        <div class="uso-card-img">
+          <img src="evento-corporativo.jpg"
+               alt="Pipe & Drape en evento corporativo profesional"
+               width="480" height="300"
+               loading="lazy" decoding="async" />
+        </div>
+        <div class="uso-card-body">
+          <div class="uso-icon">🏢</div>
+          <h3>Eventos corporativos</h3>
+          <p>Presentaciones de producto, team buildings, ruedas de prensa, cenas de empresa. Imagen profesional garantizada.</p>
+        </div>
       </div>
       <div class="uso-card">
         <div class="uso-icon">🎤</div>
