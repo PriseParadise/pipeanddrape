@@ -1,4 +1,74 @@
+# ==========================
+# PIPE & DRAPE ZARAGOZA
+# ==========================
+
 User-agent: *
 Allow: /
 
+# Evitar indexación de archivos internos si algún día existen
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /backup/
+
+# Sitemap
 Sitemap: https://www.pipeanddrapezaragoza.es/sitemap.xml
+
+# ==========================
+# GOOGLE
+# ==========================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# ==========================
+# BING / COPILOT
+# ==========================
+
+User-agent: Bingbot
+Allow: /
+
+# ==========================
+# OPENAI
+# ==========================
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ==========================
+# ANTHROPIC
+# ==========================
+
+User-agent: ClaudeBot
+Allow: /
+
+# ==========================
+# COMMON CRAWL
+# ==========================
+
+User-agent: CCBot
+Allow: /
+
+# ==========================
+# PERPLEXITY
+# ==========================
+
+User-agent: PerplexityBot
+Allow: /
+
+# ==========================
+# AMAZON
+# ==========================
+
+User-agent: Amazonbot
+Allow: /
