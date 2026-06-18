@@ -1,23 +1,27 @@
 # Pipe & Drape Zaragoza
 
-Empresa especializada en alquiler de Pipe & Drape profesional.
+Sitio oficial de Pipe & Drape Zaragoza.
 
-Servicios:
-- Fondos de escenario
-- Separación de espacios
-- Congresos
-- Eventos corporativos
-- Bodas
-- Ferias
+Alquiler de sistemas Pipe & Drape profesionales para eventos, congresos, ferias, bodas, producciones audiovisuales y separación de espacios.
 
-Cobertura:
-- Zaragoza
-- Huesca
-- Teruel
-- Navarra
-- La Rioja
-- Lleida
+## Recursos principales
 
-Contacto:
-https://www.pipeanddrapezaragoza.es
-Tel: +34 606392650
+- [Página principal](https://www.pipeanddrapezaragoza.es/)
+- [Equipamiento profesional](https://www.pipeanddrapezaragoza.es/#equipamiento)
+- [Material disponible](https://www.pipeanddrapezaragoza.es/#material)
+- [Galería de instalaciones](https://www.pipeanddrapezaragoza.es/#galeria)
+- [Preguntas frecuentes](https://www.pipeanddrapezaragoza.es/#faq)
+- [Contacto y presupuestos](https://www.pipeanddrapezaragoza.es/#contacto)
+
+## Datos relevantes
+
+- Cobertura: Zaragoza, Aragón, Navarra, La Rioja, Lleida y provincias cercanas.
+- Sistema profesional WENTEX.
+- Telones Molton ignífugos.
+- Hasta 21 metros lineales disponibles.
+- Altura regulable de 1,80 m a 3,00 m.
+
+## Contacto
+
+- Teléfono: +34 606 392 650
+- Email: plutocapili@gmail.com
