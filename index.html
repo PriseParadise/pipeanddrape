@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KNMHW895');</script>
-<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager + gtag: carga diferida hasta primera interacción o 3,5s, para no bloquear el render inicial -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var __gtmLoaded = false;
+    function __loadGTM(){
+      if (__gtmLoaded) return;
+      __gtmLoaded = true;
+      dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      var f = document.getElementsByTagName('script')[0];
+      var j = document.createElement('script');
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KNMHW895';
+      f.parentNode.insertBefore(j, f);
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=GTM-KNMHW895';
+      f.parentNode.insertBefore(g, f);
+      gtag('js', new Date());
+      gtag('config', 'GTM-KNMHW895');
+      ['scroll','mousemove','touchstart','keydown','click'].forEach(function(ev){
+        window.removeEventListener(ev, __loadGTM, { passive: true });
+      });
+      clearTimeout(__gtmFallback);
+    }
+    ['scroll','mousemove','touchstart','keydown','click'].forEach(function(ev){
+      window.addEventListener(ev, __loadGTM, { passive: true, once: true });
+    });
+    var __gtmFallback = setTimeout(__loadGTM, 3500);
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2SL4XXF67B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2SL4XXF67B');
-</script>  
   <!-- ═══ Favicon ═══ -->
   <link rel="icon" href="favicon.ico" sizes="any" />
+
+  <!-- ═══ Preload LCP image ═══ -->
+  <link rel="preload" as="image" href="hero-pipe-drape.jpg" fetchpriority="high" />
 
   <!-- ═══ SEO ═══ -->
   <title>Alquiler de Pipe & Drape en Zaragoza | Sistema Wentex y Telón Molton Ignífugo</title>
@@ -53,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "description": "Alquiler de pipe & drape para fondos de escenario, separadores y cortinaje profesional en eventos. Hasta 21 metros lineales disponibles. Servicio en Zaragoza, Aragón y alrededores.",
     "image": [
       "https://www.pipeanddrapezaragoza.es/og-image.png",
-      "https://www.pipeanddrapezaragoza.es/hero-pipe-drape.png"
+      "https://www.pipeanddrapezaragoza.es/hero-pipe-drape.jpg"
     ],
     "logo": "https://www.pipeanddrapezaragoza.es/og-image.png",
     "telephone": "+34606392650",
@@ -790,7 +809,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="hero-visual reveal">
-      <img src="hero-pipe-drape.png"
+      <img src="hero-pipe-drape.jpg"
            alt="Instalación profesional de Pipe & Drape para eventos en Zaragoza"
            width="640" height="800"
            loading="eager" fetchpriority="high" decoding="async" />
